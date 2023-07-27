@@ -5,12 +5,12 @@
 }
 
 :root {
-    --bs-primary: #1abc9c;
-    --bs-dark: #2c3e50;
-    --bs-dark-soft: #3a546d;
-    --bs-white: #FFFFFF;
-    --bs-black: #000000;
+    --bs-primary: #1a73e8;
     --bs-accent: #fe8e00;
+    --bs-black: #000000;
+    --bs-dark: #051e34;
+    --bs-white: #FFFFFF;
+    --bs-light: #e5e5e5;
 }
 
 
@@ -22,8 +22,9 @@
     padding: 0.25rem;
 }
 
-
-
+.container-fluid{
+    max-width: 60px;
+}
 
 
 
@@ -45,11 +46,11 @@
 
 /* media queries */
 
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 575px) {}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 767px) {}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
 
     .navbar-brand {
         display: none;
@@ -58,8 +59,12 @@
     .navbar-brand-lg {
         display: flex;
     }
+
+    .container-fluid {
+        max-width: 150px;
+    }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1999px) {}
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1399px) {}
