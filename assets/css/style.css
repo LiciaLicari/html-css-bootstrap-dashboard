@@ -14,17 +14,39 @@
 }
 
 
+.section_sidebar .container-fluid {
+    width: 60px;
+    height: 100vh;
+    background-image: url(/assets/img/sidebar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat
+    
+}
+
+
+
 .navbar-brand-lg {
     display: none;
 }
+
+.section_sidebar a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--sptf-dark-soft);
+    display: flex;
+    align-items: center;
+    
+}
+
 
 .fa-bell {
     padding: 0.25rem;
 }
 
-.container-fluid{
-    max-width: 60px;
+.ms-bg-blue {
+    background-color: #051e34;
 }
+
 
 
 
@@ -60,9 +82,7 @@
         display: flex;
     }
 
-    .container-fluid {
-        max-width: 150px;
-    }
+   
 }
 
 @media screen and (min-width: 1999px) {}
