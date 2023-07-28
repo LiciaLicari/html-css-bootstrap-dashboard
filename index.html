@@ -18,64 +18,30 @@
 <body>
 
     <header class="site_top">
-
-        <nav class="navbar bg-light ms_bg_light navbar-expand-md py-3">
-            <div class="container-fluid">
-                <div class="col-2">
-                    <a class="navbar-brand py-0 my-0 me-5" href="#">
-                        <img src="./assets/img/mobile-logo.png" alt="Logo-mobile" height="50">
-                    </a>
-                    <a class="navbar-brand-lg" href="#"><img src="./assets/img/logo.svg" alt="Logo"></a>
+        <nav class="navbar navbar-expand mt-2 ms_bg_lighter py-3">
+            <div class="container-fluid" style="background-color: #FFFFFF">
+                <img class="mobile_logo me-3 d-inline d-lg-none" src="./assets/img/mobile-logo.png" alt="">
+                <img class="pe-4 d-none d-lg-inline" src="./assets/img/logo.svg" alt="">
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text bg-secondary-subtle" id="addon-wrapping"><i class="fa fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control ps-0 border-start-0 bg-secondary-subtle" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Prova a cercare: Lezioni di Laravel" aria-describedby="addon-wrapping">
                 </div>
-                <!-- /logo -->
-
-                <div class="col-8">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                </div>
-                <div class="col-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-
-                        <span class="fa-solid fa-bell"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"><i
-                                            class="fa-solid fa-list-ul"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa-solid fa-ellipsis"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="menu d-flex ms-2 align-items-center">
+                    <i class="mx-1 fa-solid fa-list fa-lg fa-fw d-none d-lg-inline"></i>
+                    <i class="mx-1 fa-solid fa-circle-question fa-lg fa-fw d-none d-lg-inline"></i>
+                    <i class="mx-1 fa-solid fa-ellipsis-vertical fa-lg fa-fw d-none d-lg-inline"></i>
+                    <div class="choose mx-1">
+                        <i class="fa-solid fa-bell fa-lg fa-fw" style="color: #ff8f00;"  data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
+    
     </header>
 
     <div class="site_bottom d-flex">
@@ -130,7 +96,7 @@
         <!-- /.sidebar -->
 
 
-        <main class=" site_main overflow-x-hidden overflow-y-scroll">
+        <main class="flex-grow-1 site_main overflow-x-hidden overflow-y-scroll">
 
 
             <div height="100" class="banner bg-primary text-white py-4">

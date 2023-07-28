@@ -11,6 +11,7 @@
     --bs-dark: #051e34;
     --bs-white: #FFFFFF;
     --bs-light: #e5e5e5;
+    --bs-lighter: #f8f8fb;
 }
 
 
@@ -18,11 +19,17 @@
     background-color: var(--bs-light);
 }
 
+.ms_bg_lighter {
+    background-color: var(--bs-lighter);
+}
 
 .ms_bg_dark {
     background-color: var(--bs-dark);
 }
 
+.mobile_logo {
+    width: 50px;
+}
 
 .site_top {
     height: 70px;
@@ -128,7 +135,7 @@ main .table img {
 
 
     .offcanvas.offcanvas-end.ms_w-lg-50 {
-        width: 50%;
+        width: 50% !important;
     }
     
    
