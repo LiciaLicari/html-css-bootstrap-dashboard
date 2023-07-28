@@ -14,15 +14,33 @@
 }
 
 
-.section_sidebar .container-fluid {
-    width: 60px;
-    height: 100vh;
-    background-image: url(/assets/img/sidebar-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat
-    
+.ms_bg_light {
+    background-color: var(--bs-light);
 }
 
+
+.ms_bg_dark {
+    background-color: var(--bs-dark);
+}
+
+
+.site_top {
+    height: 70px;
+}
+
+.site_bottom {
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 70px;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+
+.site_main {
+    width: calc(100vw - 70px);
+}
 
 
 .navbar-brand-lg {
@@ -82,9 +100,19 @@
         display: flex;
     }
 
+    .site_bottom > .sidebar {
+        width: 150px;
+    }
+
+    .site_main {
+        width: calc(100vw - 150px);
+    }
+
    
 }
 
-@media screen and (min-width: 1999px) {}
+@media screen and (min-width: 1999px) {
+    
+}
 
 @media screen and (min-width: 1399px) {}
