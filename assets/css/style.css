@@ -68,13 +68,10 @@ main .table img {
     border-radius: 50%;
 }
 
-.ms_w-100 {
-    width: calc(100% -70px);
-}
-
-.ms_w-lg-50 {
+.offcanvas.offcanvas-end.ms_w-100 {
     width: 100%;
 }
+
 
 .navbar-brand-lg {
     display: none;
@@ -129,10 +126,11 @@ main .table img {
         width: calc(100vw - 150px);
     }
 
-    .ms_w-lg-50 {
+
+    .offcanvas.offcanvas-end.ms_w-lg-50 {
         width: 50%;
     }
-   
+    
    
 }
 
